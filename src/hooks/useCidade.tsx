@@ -1,0 +1,28 @@
+import { useState, useEffect } from "react";
+
+export interface ICidade {
+  nome: string;
+  codigo_ibge: string;
+}
+
+export const useCidade = ({ uf }: any) => {
+  const [cidades, setCidades] = useState<ICidade[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!uf) return;
+
+    setLoading(true);
+
+    const API = ` https://brasilapi.com.br/api/ibge/municipios/v1/${uf}`;
+    fetch(API)
+      .then((response) => response.json())
+      .then((data) => setCidades(data))
+      .then(() => setLoading(false));
+  }, [uf]);
+
+  return {
+    cidades,
+    loading,
+  };
+};
