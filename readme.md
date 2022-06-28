@@ -6,7 +6,7 @@ Eu fiz um projeto desses recentemente pra uma entrevista e achei muito complicad
 
 ## finalizado.
 
-
+## Link para o projeto:https://api-cidade-e-estado.vercel.app
 
 ## tecnologias.
 Feito com framework react com a linguagem type script e styled components.
