@@ -1,6 +1,6 @@
 
 
-# Campo de cidade e estado com 
+# Campo de cidade e estado
 Eu fiz um projeto desses recentemente pra uma entrevista e achei muito complicado então nada melhor que treinar até se acostumar né.
 
 
